@@ -1,6 +1,4 @@
-import { Config } from "next-manifest-cli/types";
-
-const config: Config = {
+export const config = {
   name: "app-starter-kit",
   description: "A starter kit for creating Vue.js applications with Valtio",
   icons: {
@@ -16,5 +14,3 @@ const config: Config = {
     },
   },
 };
-
-export default config;
