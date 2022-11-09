@@ -1,8 +1,17 @@
-const Home = () => {
+import { Heading } from "@chakra-ui/react";
+import { NextPage } from "next";
+import { NextSeo } from "next-seo";
+import { Layout } from "@/components/layout";
+
+const Home: NextPage = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <>
+      <NextSeo title="Home" />
+
+      <Layout>
+        <Heading>Home</Heading>
+      </Layout>
+    </>
   );
 };
 

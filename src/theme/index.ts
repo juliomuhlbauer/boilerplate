@@ -1,20 +1,24 @@
 import { extendTheme } from "@chakra-ui/react";
 import { theme as base, ThemeConfig } from "@chakra-ui/theme";
-
-import components from "./components";
 import { globalStyles } from "./styles/global-styles";
+
+import { Inter } from "@next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+});
+
+const fonts = {
+  heading: `${inter.style.fontFamily}, ${base.fonts.heading}`,
+  body: `${inter.style.fontFamily}, ${base.fonts.body}`,
+};
 
 const config: ThemeConfig = {
   initialColorMode: "light",
   useSystemColorMode: false,
 };
 
-const fonts = {
-  heading: `Inter, ${base.fonts.heading}`,
-  body: `Inter, ${base.fonts.body}`,
-};
-
-const primary = base.colors.purple;
+const primary = base.colors.black;
 
 const colors = {
   primary,
@@ -32,5 +36,4 @@ export const theme = extendTheme({
   },
   styles: globalStyles,
   colors,
-  components,
 });
