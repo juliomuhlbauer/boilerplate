@@ -8,10 +8,10 @@ export const scrollbar: SystemStyleObject = {
     },
     "::-webkit-scrollbar-thumb": {
       rounded: "5px",
-      bgColor: "gray.600",
+      bgColor: "primary.600",
     },
     "::-webkit-scrollbar-thumb:hover": {
-      bgColor: "gray.400",
+      bgColor: "primary.400",
     },
     "::-webkit-scrollbar-corner": {
       bg: "transparent",

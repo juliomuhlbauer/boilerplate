@@ -18,7 +18,7 @@ const config: ThemeConfig = {
   useSystemColorMode: false,
 };
 
-const primary = base.colors.black;
+const primary = base.colors.whiteAlpha;
 
 const colors = {
   primary,

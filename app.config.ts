@@ -9,7 +9,6 @@ interface Config {
   description: string;
   language: `${string}-${string}`;
   banner: `/${string}`;
-  url: string;
   icons: {
     web: Asset;
     app: Asset;
@@ -25,7 +24,6 @@ export const config: Config = {
   description: "A starter kit for creating Nextjs apps with Chakra UI",
   language: "pt-BR",
   banner: "/banner.png",
-  url: "",
   icons: {
     web: {
       src: "/logo-2.png",

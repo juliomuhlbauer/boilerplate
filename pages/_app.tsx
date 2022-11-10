@@ -16,7 +16,7 @@ const SEO = () => {
         site_name: config.name,
         title: config.name,
         description: config.description,
-        url: config.url + router.asPath,
+        url: process.env.SITE_URL + router.asPath,
         locale: config.language.replace("-", "_"),
         type: "website",
         images: [

@@ -5,3 +5,4 @@
 - Typescript
 - SEO
 - Google fonts
+- Sitemap
